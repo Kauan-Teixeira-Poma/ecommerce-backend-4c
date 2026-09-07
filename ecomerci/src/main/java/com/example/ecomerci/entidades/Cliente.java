@@ -16,13 +16,15 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @Setter
-public class Categoria {
+public class Cliente {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Short id;
+    private Integer id;
 
     private String nome;
 
-    private String descricao;
+    private String email;
+
+    private String telefone;
 }
